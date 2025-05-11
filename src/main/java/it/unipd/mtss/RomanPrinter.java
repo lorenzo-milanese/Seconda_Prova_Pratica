@@ -18,9 +18,24 @@ public class RomanPrinter{
         }
             
         HashMap<String, String[]> AsciiArt = new HashMap<String, String[]>(); 
-        AsciiArt.put("I", new String[] {" _____ ","|_   _|","  | |  ","  | |  "," _| |_ ","|_____|"});
-        AsciiArt.put("V", new String[] {"__      __","\\ \\    / /"," \\ \\  / / ","  \\ \\/ /  ","   \\  /   ","    \\/    "});
-        AsciiArt.put("X", new String[] {"__   __","\\ \\ / /"," \\ V / ","  > <  "," / . \\ ","/_/ \\_\\"});
+        AsciiArt.put("I", new String[] {" _____ ",
+                                        "|_   _|",
+                                        "  | |  ",
+                                        "  | |  ",
+                                        " _| |_ ",
+                                        "|_____|"});
+        AsciiArt.put("V", new String[] {"__      __",
+                                        "\\ \\    / /",
+                                        " \\ \\  / / ",
+                                        "  \\ \\/ /  ",
+                                        "   \\  /   ",
+                                        "    \\/    "});
+        AsciiArt.put("X", new String[] {"__   __",
+                                        "\\ \\ / /",
+                                        " \\ V / ",
+                                        "  > <  ",
+                                        " / . \\ ",
+                                        "/_/ \\_\\"});
             
         int Len = romanNumber.length(); 
         String ris ="";
