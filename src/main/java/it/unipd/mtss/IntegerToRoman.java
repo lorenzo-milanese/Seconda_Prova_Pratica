@@ -5,7 +5,19 @@
 package it.unipd.mtss;
 
 public class IntegerToRoman {
-    public static String convert(int number){
-        return null;
+    public static String convert(int number) {
+        if (number > 10 || number <= 0) {
+            return "errore: numeri solo tra 1 e 10";
+        }
+        int[] values = {10, 9, 5, 4, 1 };
+        String[] romanLetters = {"X", "IX", "V", "IV", "I" };
+        StringBuilder roman = new StringBuilder();
+        for (int i = 0; i < values.length; i++) {
+            while (number >= values[i]) {
+                number = number - values[i];
+                roman.append(romanLetters[i]);
+            }
+        }
+        return roman.toString();
     }
 }
