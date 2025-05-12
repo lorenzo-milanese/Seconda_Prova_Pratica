@@ -26,7 +26,7 @@ public class RomanPrinter{
                 " _| |_ ",
                 "|_____|"});
         AsciiArt.put("V", new String[] {
-                "__        __",
+                "__      __",
                 "\\ \\    / /",
                 " \\ \\  / / ",
                 "  \\ \\/ /  ",
