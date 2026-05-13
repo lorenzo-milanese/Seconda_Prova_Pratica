@@ -22,7 +22,7 @@ public class RomanPrinterTest {
                         " _| |_    _| |_    _| |_   \n" +
                         "|_____|  |_____|  |_____|  \n";
         String result = RomanPrinter.print(number);
-        assertEquals(expected, result);
+        assertEquals(expected, result );
     }
 
     @Test
